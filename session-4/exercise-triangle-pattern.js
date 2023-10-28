@@ -1,12 +1,3 @@
-/*
-Triangle Pattern
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-*/
-
 function repeatingTrianglePattern(height) {
     if (height > 0) {
         for (let i = 1, result = ""; i <= height; i++) {
@@ -17,6 +8,14 @@ function repeatingTrianglePattern(height) {
         console.log("< 0 is not allowed");
         return ("< 0 is not allowed");
     }
+    /*
+        Expected output:
+        1
+        1 2
+        1 2 3
+        1 2 3 4
+        1 2 3 4 5
+    */
 }
 
 function continuingTrianglePattern(height) {
@@ -34,6 +33,13 @@ function continuingTrianglePattern(height) {
         console.log("not allowed");
     }
     console.log(result);
+    /*
+        Expected output:
+        01
+        02 03
+        04 05 06
+        07 08 09 010
+    */
 }
 
 repeatingTrianglePattern(5);
