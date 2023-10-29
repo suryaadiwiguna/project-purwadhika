@@ -21,6 +21,18 @@ function findMaxMinAvr(arr) {
     return (`min = ${min}, max = ${max}, avr = ${avr}`)
 }
 
+function bySortMethod(arr) {
+    arr.sort(function (a, b) { return a - b })
+    let min = arr[0];
+    let max = arr[arr.length - 1]
+    let avr = 0;
+    for (let i = 0; i < arr.length; i++) {
+        avr += arr[i] / arr.length;
+    } return (`min = ${min}, max = ${max}, avr = ${avr}`)
+}
+
+
 let arrayInput = [2, 12, 5, 23, 18, 4, 45, 32]
 console.log(findMaxMinAvr(arrayInput));
+console.log(bySortMethod(arrayInput))
 //console.log(`min = ${min}, max = ${max}, avr = ${avr}`)

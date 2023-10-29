@@ -15,6 +15,6 @@ function addNewElementToArray(array, newElement) {
 }
 
 let inputArray = [1, 2, 3, 4]
-let inputNewElement = 1
+let inputNewElement = 6
 
 console.log(addNewElementToArray(inputArray, inputNewElement))
