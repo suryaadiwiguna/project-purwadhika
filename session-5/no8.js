@@ -17,9 +17,7 @@ function combineArray(array1, array2) {
 }
 
 function usingConcatMethod(data1, data2) {
-    //console.log(data1);
-    let combinedArray = data1.concat(data2);
-    return combinedArray;
+    return data1.concat(data2);
 }
 
 
