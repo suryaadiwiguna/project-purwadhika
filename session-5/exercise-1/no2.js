@@ -11,8 +11,7 @@ function arrayToString(array) {
         result += array[index] + ", "
         index++
     }
-    result += "and " + array[index - 1];
-    return result;
+    return result += "and " + array[index - 1];
 }
 
 let arrayInput = ["Apple", "Banana", "Cherry", "Date", "Lemon"]
