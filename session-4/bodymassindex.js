@@ -1,6 +1,6 @@
 function calculateBMI(weight, height) {
     let bmiCategory;
-    let rawBMI = weight / (height * height);;
+    let rawBMI = weight / (height ** 2);;
     let bmi = rawBMI.toFixed(2);
     if (bmi < 18.5) {
         bmiCategory = "less weight";
@@ -13,9 +13,9 @@ function calculateBMI(weight, height) {
     } else if (bmi >= 39.9 && bmi != Infinity) {
         bmiCategory = "obesity";
     } else {
-        bmiCategory = "error";
+        return "error, 0 weight or height is not acceptable";
     }
     return `Your BMI is ${bmi}, categorized as ${bmiCategory}.`;
 }
 
-console.log(calculateBMI(1, 0));
+console.log(calculateBMI(82, 1.78));

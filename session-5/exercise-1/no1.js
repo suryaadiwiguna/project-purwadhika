@@ -6,19 +6,19 @@ a. Example : arr = [12, 5, 23, 18, 4, 45, 32] → {lowest : 4, highest: 45, aver
 function findMaxMinAvr(arr) {
     let min = arr[arr.length - 1];
     let max = arr[arr.length - 1];
-    let avr = 0;
+    let total = 0;
     // console.log(min, max, avr)
     for (let i = arr.length - 1; i >= 0; i--) {
-        avr += arr[i] / arr.length
+        total += arr[i];
         //console.log(avr)
-        if (arr[i] <= min) {
+        if (arr[i] < min) {
             min = arr[i]
             // console.log(min)
-        } else if (arr[i] >= max) {
+        } else if (arr[i] > max) {
             max = arr[i]
         }
     }
-    return (`min = ${min}, max = ${max}, avr = ${avr}`)
+    return (`min = ${min}, max = ${max}, avr = ` + total / arr.length)
 }
 
 function bySortMethod(arr) {
